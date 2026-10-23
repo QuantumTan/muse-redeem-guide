@@ -3,8 +3,20 @@
 A single-page, static blog guide. No framework, no build step, no trackers.
 
 ## Files
-- `index.html` — the whole site (inline CSS/JS)
+- `index.html` — the whole site (inline CSS/JS), with SEO meta, Open Graph /
+  Twitter cards, and HowTo + FAQ structured data (JSON-LD)
+- `robots.txt` — allows all crawlers, points to the sitemap
+- `sitemap.xml` — the single page, for search engines
+- `og-image.png` — 1200×630 social/search preview image
+- `favicon.svg` — site icon
 - `vercel.json` — static deployment config
+
+## Getting indexed
+SEO tags make the page *eligible* to rank; they do not guarantee a position.
+To speed up discovery: verify the site in Google Search Console, submit
+`sitemap.xml`, and use URL Inspection → Request Indexing for the homepage.
+Indexing a brand-new site typically takes days to weeks, and rankings
+depend on search demand and competition, not on tags alone.
 
 ## Deploy to Vercel via GitHub
 1. Push this folder as a GitHub repository.

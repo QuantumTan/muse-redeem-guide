@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://muse-redeem-guide.vercel.app/sitemap.xml
